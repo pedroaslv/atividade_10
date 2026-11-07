@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservas de Laboratórios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p>Laboratório de Programação Full Stack</p>
+    <h1>Reservas de Laboratórios</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Nova reserva</h2>
+
+      <form id="form-reserva">
+        <label>
+          Laboratório
+          <input id="laboratorio" required minlength="3" placeholder="Lab 02">
+        </label>
+
+        <label>
+          Responsável
+          <input id="responsavel" required minlength="3" placeholder="Ana Lima">
+        </label>
+
+        <label>
+          Data
+          <input id="data-reserva" type="date" required>
+        </label>
+
+        <label>
+          Turno
+          <select id="turno">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+          </select>
+        </label>
+
+        <label>
+          Quantidade de alunos
+          <input id="quantidade-alunos" type="number" min="1" max="40" required>
+        </label>
+
+        <label class="largo">
+          Finalidade
+          <input id="finalidade" required minlength="5" placeholder="Aula de Banco de Dados">
+        </label>
+
+        <button type="submit">Criar reserva</button>
+      </form>
+
+      <p id="mensagem" aria-live="polite"></p>
+    </section>
+
+    <section>
+      <h2>Reservas cadastradas</h2>
+      <div id="lista-reservas"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

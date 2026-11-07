@@ -1,0 +1,24 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.4, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\pedro\OneDrive\Faculdade\6 periodo\Full Stack\P2\A9\atividade10\backend\.venv\Scripts\python.exe
+rootdir: C:\Users\pedro\OneDrive\Faculdade\6 periodo\Full Stack\P2\A9\atividade10
+plugins: anyio-4.16.0
+collecting ... collected 10 items
+
+tests/test_api.py::test_post_valido_retorna_201_com_id_e_criada_em PASSED [ 10%]
+tests/test_api.py::test_get_lista_reserva_criada PASSED                  [ 20%]
+tests/test_api.py::test_turno_madrugada_retorna_422 PASSED               [ 30%]
+tests/test_api.py::test_quantidade_valida_retorna_201[25] PASSED         [ 40%]
+tests/test_api.py::test_quantidade_valida_retorna_201[1] PASSED          [ 50%]
+tests/test_api.py::test_quantidade_valida_retorna_201[40] PASSED         [ 60%]
+tests/test_api.py::test_quantidade_fora_do_limite_retorna_422[0] PASSED  [ 70%]
+tests/test_api.py::test_quantidade_fora_do_limite_retorna_422[41] PASSED [ 80%]
+tests/test_api.py::test_quantidade_ausente_retorna_422_field_required PASSED [ 90%]
+tests/test_api.py::test_nome_quantidadeAlunos_nao_e_aceito PASSED        [100%]
+
+============================== warnings summary ===============================
+backend\.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\pedro\OneDrive\Faculdade\6 periodo\Full Stack\P2\A9\atividade10\backend\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 10 passed, 1 warning in 0.44s ========================
